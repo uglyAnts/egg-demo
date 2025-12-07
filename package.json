@@ -12,9 +12,14 @@
   "license": "ISC",
   "dependencies": {
     "egg": "^3.31.0",
-    "egg-view-nunjucks": "^2.3.0"
+    "egg-sequelize": "^6.0.0",
+    "egg-view-nunjucks": "^2.3.0",
+    "file-type": "^21.1.0",
+    "pg": "^8.16.3",
+    "pg-hstore": "^2.3.4"
   },
   "devDependencies": {
-    "egg-bin": "^6.13.0"
+    "egg-bin": "^6.13.0",
+    "sequelize-cli": "^6.6.3"
   }
 }
