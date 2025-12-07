@@ -1,41 +1,41 @@
 "use strict";
-module.exports = (app) => {
-  const { INTEGER, STRING, TEXT, BOOLEAN, SMALLINT, INET, DATE } =
-    app.Sequelize;
 
+module.exports = (app) => {
+  const { DataTypes } = app.Sequelize;
   const Account = app.model.define(
     "account",
     {
-      id: { type: INTEGER, primaryKey: true, autoIncrement: true },
-      username: { type: STRING(64), allowNull: false, unique: true },
-      email: { type: STRING(255), unique: true },
-      phone: { type: STRING(20), unique: true },
-      passwordHash: { type: TEXT, allowNull: false, field: "password_hash" },
-      lastLoginAt: { type: DATE, field: "last_login_at" },
-      lastLoginIp: { type: INET, field: "last_login_ip" },
-      failedLoginAttempts: {
-        type: SMALLINT,
-        defaultValue: 0,
-        field: "failed_login_attempts",
+      accountName: {
+        type: DataTypes.STRING(32),
+        primaryKey: true,
+        allowNull: false,
+        unique: true,
+        // field: "account_name"
       },
-      lockedUntil: { type: DATE, field: "locked_until" },
-      isActive: { type: BOOLEAN, defaultValue: true, field: "is_active" },
-      isEmailVerified: {
-        type: BOOLEAN,
-        defaultValue: false,
-        field: "is_email_verified",
+      accountPassword: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        unique: true,
+        // field: "account_password"
       },
-      isPhoneVerified: {
-        type: BOOLEAN,
-        defaultValue: false,
-        field: "is_phone_verified",
+      email: {
+        type: DataTypes.STRING(64),
+        allowNull: true,
+        unique: true,
+      },
+      phoneNumber: {
+        type: DataTypes.STRING(11),
+        allowNull: true,
+        unique: true,
+        // field: "phone_number"
       },
     },
     {
+      modelName: "Account",
       tableName: "accounts",
-      timestamps: true,
-      createdAt: "created_at",
-      updatedAt: "updated_at",
+      timestamps: false,
+      // createdAt: "created_at",
+      // updatedAt: "updated_at",
     }
   );
 

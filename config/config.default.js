@@ -23,10 +23,10 @@ exports.robot = {
 exports.sequelize = {
   dialect: "postgres", // support: mysql, mariadb, postgres, mssql
   database: "egg",
-  host: "localhost",
+  host: "47.108.224.51",
   port: 5432,
-  username: "postgres",
-  password: "hik-postgres",
+  username: "admin",
+  password: "shiq*qk73hj41#",
   // delegate: 'myModel', // load all models to `app[delegate]` and `ctx[delegate]`, default to `model`
   // baseDir: 'my_model', // load all files in `app/${baseDir}` as models, default to `model`
   // exclude: 'index.js', // ignore `app/${baseDir}/index.js` when load models, support glob and array
