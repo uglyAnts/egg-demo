@@ -3,7 +3,7 @@
     "username": "admin",
     "password": "shiq*qk73hj41#",
     "database": "egg",
-    "host": "47.108.224.51",
+    "host": "127.0.0.1"",
     "port": "5432",
     "dialect": "postgres"
   },
@@ -11,7 +11,7 @@
     "username": "admin",
     "password": "shiq*qk73hj41#",
     "database": "egg",
-    "host": "47.108.224.51",
+    "host": "127.0.0.1"",
     "port": "5432",
     "dialect": "postgres"
   },
@@ -19,7 +19,7 @@
     "username": "admin",
     "password": "shiq*qk73hj41#",
     "database": "egg",
-    "host": "47.108.224.51",
+    "host": "127.0.0.1"",
     "port": "5432",
     "dialect": "postgres"
   }
