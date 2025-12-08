@@ -23,7 +23,7 @@ exports.robot = {
 exports.sequelize = {
   dialect: "postgres", // support: mysql, mariadb, postgres, mssql
   database: "egg",
-  host: "47.108.224.51",
+  host: "127.0.0.1",
   port: 5432,
   username: "admin",
   password: "shiq*qk73hj41#",
